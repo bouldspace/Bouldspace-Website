@@ -60,8 +60,8 @@ export default function About() {
                 Over the years, we've noticed a disconnect in the industry i.e. hidden costs, delayed timelines, and a lack of personalization. We set out to change that narrative. Today, Bouldspace stands as a beacon of transparency and uncompromising quality.
               </p>
               <div className="pt-4 border-t border-border mt-8">
-                <p className="font-heading text-xl font-bold text-foreground mb-1">Sayyed A.R. Rehmaan</p>
-                <p className="text-sm text-accent uppercase tracking-widest font-medium drop-shadow-sm">Founder & Principal Designer</p>
+                <p className="font-heading text-xl font-bold text-foreground mb-1">Team Bouldspace</p>
+                
               </div>
             </div>
           </motion.div>
