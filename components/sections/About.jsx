@@ -33,6 +33,7 @@ export default function About() {
                 className="object-cover"
               />
             </div>
+
             {/* Experience Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 md:w-32 md:h-32 bg-accent rounded-full text-brand-950 flex flex-col items-center justify-center shadow-lg border-4 border-brand-50 dark:border-brand-950 shadow-black/20">
               <span className="text-2xl md:text-3xl font-heading font-bold">10+</span>
@@ -47,9 +48,16 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-3 drop-shadow-sm">Our Story</h2>
+            <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-3 drop-shadow-sm">
+              Our Story
+            </h2>
+
             <h3 className="text-3xl md:text-5xl font-heading font-bold mb-4 md:mb-6 text-foreground leading-tight">
-              Crafting Spaces That Tell <span className="text-accent dark:text-accent font-bold italic drop-shadow-sm">Your</span> Story
+              Crafting Spaces That Tell{" "}
+              <span className="text-accent dark:text-accent font-bold italic drop-shadow-sm">
+                Your
+              </span>{" "}
+              Story
             </h3>
             
             <div className="space-y-4 md:space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
@@ -59,12 +67,15 @@ export default function About() {
               <p>
                 Over the years, we've noticed a disconnect in the industry i.e. hidden costs, delayed timelines, and a lack of personalization. We set out to change that narrative. Today, Bouldspace stands as a beacon of transparency and uncompromising quality.
               </p>
+
               <div className="pt-4 border-t border-border mt-8">
-                <p className="font-heading text-xl font-bold text-foreground mb-1">Team Bouldspace</p>
-                
+                <p className="text-sm text-accent uppercase tracking-widest font-medium drop-shadow-sm">
+                  Founder & Principal Designer
+                </p>
               </div>
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
