@@ -5,7 +5,6 @@ import CompanyStory from "@/components/sections/CompanyStory";
 import MissionVision from "@/components/sections/MissionVision";
 import AboutValues from "@/components/sections/AboutValues";
 import AboutStats from "@/components/sections/AboutStats";
-import Leadership from "@/components/sections/Leadership";
 import Philosophy from "@/components/sections/Philosophy";
 import Workflow from "@/components/sections/Workflow";
 import AboutCTA from "@/components/sections/AboutCTA";
@@ -21,7 +20,6 @@ export default function About() {
         <MissionVision />
         <AboutValues />
         <AboutStats />
-        <Leadership />
         <Philosophy />
         <Workflow />
         <AboutCTA />
