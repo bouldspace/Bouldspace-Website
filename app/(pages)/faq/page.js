@@ -26,7 +26,7 @@ export default function FAQPage() {
   const containerRef = useRef(null);
   const { scrollY } = useScroll();
   
-  // Parallax background translations
+  
   const bgY = useTransform(scrollY, [0, 800], [0, 200]);
   const contentY = useTransform(scrollY, [0, 800], [0, -60]);
   const contentOpacity = useTransform(scrollY, [0, 500], [1, 0]);
