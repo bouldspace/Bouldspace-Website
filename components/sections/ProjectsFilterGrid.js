@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, ArrowUpRight } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 export default function ProjectsFilterGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -19,7 +19,7 @@ export default function ProjectsFilterGrid() {
       img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/da/13/9f/hotel-facade.jpg?w=1400&h=800&s=1",
       title: "Hotel Lilac",
       category: "Hospitality",
-      location: "Jaipur / Kota, RJ",
+      location: "Kota, RJ",
       status: "Completed",
       commId: "BS-HL-01",
       gridClass: "md:col-span-8 lg:col-span-7 aspect-[16/10]",
@@ -55,7 +55,7 @@ export default function ProjectsFilterGrid() {
       img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/543027436.jpg?k=103a5d86c6d6940f386b8c679d879bbfb05491e251c280a27dc0dc1a698296ab&o=",
       title: "Hotel Classic Sapphire",
       category: "Hospitality",
-      location: "Jaipur / Kota, RJ",
+      location: "Bundi Kota, RJ",
       status: "Completed",
       commId: "BS-HCS-05",
       gridClass: "md:col-span-6 lg:col-span-5 aspect-[3/4]",
@@ -145,15 +145,6 @@ export default function ProjectsFilterGrid() {
                   {/* Status Indicator */}
                   <div className="absolute top-5 right-5 bg-primary/95 text-on-primary px-3 py-1.5 rounded-sm text-[9px] font-sans font-bold tracking-[0.2em] uppercase shadow-elevated">
                     {project.status}
-                  </div>
-
-                  {/* Interactive Exhibition Hover Overlay */}
-                  <div className="absolute inset-0 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                    <div className="flex items-center gap-3 bg-surface-container/95 backdrop-blur-md border border-outline-variant/25 px-5 py-3 rounded shadow-elevated">
-                      <span className="font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-primary flex items-center gap-1.5">
-                        Examine Commission <ArrowUpRight className="h-4 w-4" />
-                      </span>
-                    </div>
                   </div>
                 </div>
 

@@ -84,7 +84,7 @@ export default function ProcessJourney() {
           {/* Left Side: Technical Coordinates grid (6 columns) */}
           <div className="lg:col-span-6 lg:order-1 order-2">
             <FadeIn direction="right" duration={1.0}>
-              <div className="relative aspect-[4/3] w-full rounded border border-outline-variant/30 bg-surface-container p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group hover:border-primary transition-colors duration-500">
+              <div className="relative md:aspect-[4/3] aspect-auto min-h-[380px] md:min-h-0 w-full rounded border border-outline-variant/30 bg-surface-container p-6 sm:p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group hover:border-primary transition-colors duration-500">
                 <div className="absolute inset-0 opacity-[0.03] blueprint-grid pointer-events-none" />
                 
                 <div className="flex justify-between items-start text-[10px] tracking-widest text-outline uppercase font-semibold">
@@ -93,12 +93,12 @@ export default function ProcessJourney() {
                 </div>
 
                 <div className="space-y-6 my-auto pt-6">
-                  <div className="border-l-2 border-primary/45 pl-6 space-y-2">
+                  <div className="border-l-2 border-primary/45 pl-4 sm:pl-6 space-y-2">
                     <span className="text-primary font-bold tracking-widest uppercase text-[10px]">FRAMEWORK // 01</span>
                     <h4 className="font-serif text-[20px] font-normal text-on-surface">Feasibility Studies</h4>
                     <p className="text-[13px] text-secondary">Analyzing layout codes, structural grids, and geographical constraints.</p>
                   </div>
-                  <div className="border-l-2 border-primary/45 pl-6 space-y-2">
+                  <div className="border-l-2 border-primary/45 pl-4 sm:pl-6 space-y-2">
                     <span className="text-primary font-bold tracking-widest uppercase text-[10px]">FRAMEWORK // 02</span>
                     <h4 className="font-serif text-[20px] font-normal text-on-surface">Risk Mitigation</h4>
                     <p className="text-[13px] text-secondary">Pre-emptive material audits and supply paths analysis to secure delivery deadlines.</p>
@@ -211,7 +211,7 @@ export default function ProcessJourney() {
           {/* Left Side: Technical Coordinates Panel (6 columns) */}
           <div className="lg:col-span-6 lg:order-1 order-2 relative">
             <FadeIn direction="right" duration={1.0}>
-              <div className="relative aspect-[4/3] w-full rounded border border-outline-variant/30 bg-surface-container p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group hover:border-primary transition-colors duration-500">
+              <div className="relative md:aspect-[4/3] aspect-auto min-h-[380px] md:min-h-0 w-full rounded border border-outline-variant/30 bg-surface-container p-6 sm:p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group hover:border-primary transition-colors duration-500">
                 <div className="absolute inset-0 opacity-[0.03] blueprint-grid pointer-events-none" />
                 
                 <div className="flex justify-between items-start text-[10px] tracking-widest text-outline uppercase font-semibold">
@@ -220,12 +220,12 @@ export default function ProcessJourney() {
                 </div>
 
                 <div className="space-y-6 my-auto pt-6">
-                  <div className="border-l-2 border-primary/45 pl-6 space-y-2">
+                  <div className="border-l-2 border-primary/45 pl-4 sm:pl-6 space-y-2">
                     <span className="text-primary font-bold tracking-widest uppercase text-[10px]">INTEGRATION // 01</span>
                     <h4 className="font-serif text-[20px] font-normal text-on-surface">Consultant Sync</h4>
                     <p className="text-[13px] text-secondary">Unifying structural engineering, MEP planning, and landscape vectors under a single dashboard.</p>
                   </div>
-                  <div className="border-l-2 border-primary/45 pl-6 space-y-2">
+                  <div className="border-l-2 border-primary/45 pl-4 sm:pl-6 space-y-2">
                     <span className="text-primary font-bold tracking-widest uppercase text-[10px]">INTEGRATION // 02</span>
                     <h4 className="font-serif text-[20px] font-normal text-on-surface">Vendor Integration</h4>
                     <p className="text-[13px] text-secondary">Aligning boutique masonry, casing mills, and steel fabricators with blueprint parameters.</p>

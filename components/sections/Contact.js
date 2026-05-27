@@ -251,7 +251,7 @@ export default function Contact() {
                           id="stitch-fullname"
                           placeholder="John Doe"
                           value={fullName}
-                          onChange={(e) => setFullName(e.target.value)}
+                          onChange={(e) => setFullName(e.target.value.replace(/[^a-zA-Z\s]/g, ""))}
                           required
                         />
                         <Input
@@ -260,7 +260,7 @@ export default function Contact() {
                           type="email"
                           placeholder="john@example.com"
                           value={email}
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={(e) => setEmail(e.target.value.replace(/[^a-zA-Z0-9@._+-]/g, ""))}
                           required
                         />
                         <div className="flex flex-col gap-2 relative">
@@ -274,7 +274,12 @@ export default function Contact() {
                               type="tel"
                               placeholder="75689 03919"
                               value={phone}
-                              onChange={(e) => setPhone(e.target.value)}
+                              onChange={(e) => {
+                                const val = e.target.value.replace(/\D/g, "");
+                                if (val.length <= 10) {
+                                  setPhone(val);
+                                }
+                              }}
                               className="w-full pl-10 pr-0 py-2 bg-transparent border-b border-outline text-on-surface placeholder:text-outline-variant/60 focus:outline-none focus:border-primary transition-colors duration-300 font-sans"
                               required
                             />

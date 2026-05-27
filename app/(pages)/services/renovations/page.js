@@ -70,75 +70,210 @@ export default function RenovationsServicePage() {
     {
       title: "Living Spaces",
       subtitle: "The Concrete Metamorphosis",
-      beforeDesc: "A closed, compartmentalized dark interior with sagging wooden trusses, damp plaster walls, and poor sunlight penetration.",
-      afterDesc: "A double-height open volumetric lounge clad in custom travertine stone, featuring raw concrete structural columns, and massive floor-to-ceiling glass panel facades.",
+      beforeDesc: "Dark, cramped interior partitioned by rigid brick load-bearing walls, failing softwood roof trusses, damp plaster corners with high moisture readings, and a single low-efficiency visual opening.",
+      afterDesc: "An open double-height lounge structured with vein-matched honed ivory travertine panels, anchored by heavy raw-concrete column jackets, dynamic warm spotlights, and a high-performance floor-to-ceiling glass facade.",
       details: ["Travertine slab installation", "Volumetric load restructuring", "HVAC passive draft systems"],
       beforeSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="50" y="30" width="300" height="140" className="stroke-outline/35" />
-          <path d="M 50,60 C 150,85 250,85 350,60" className="stroke-outline/25 stroke-dasharray-[2_4]" />
-          <line x1="120" y1="30" x2="120" y2="170" className="stroke-outline/15" />
-          <line x1="280" y1="30" x2="280" y2="170" className="stroke-outline/15" />
-          <circle cx="200" cy="100" r="8" className="stroke-primary/20" />
-          <text x="200" y="185" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">OUTDATED CLOSED VOLUMES</text>
+          {/* Outline floor plan */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-outline/35" />
+          {/* Compartmental divider wall 1 */}
+          <line x1="120" y1="20" x2="120" y2="160" className="stroke-outline/25" />
+          {/* Compartmental divider wall 2 */}
+          <line x1="200" y1="20" x2="200" y2="160" className="stroke-outline/25" />
+          {/* Compartmental divider wall 3 */}
+          <line x1="280" y1="20" x2="280" y2="160" className="stroke-outline/25" />
+          {/* Door swings to show closed rooms */}
+          <line x1="120" y1="60" x2="100" y2="60" className="stroke-outline/20" />
+          <path d="M 120,60 A 20,20 0 0,1 100,80" className="stroke-outline/20 stroke-dasharray-[2_2]" />
+          <line x1="280" y1="100" x2="300" y2="100" className="stroke-outline/20" />
+          <path d="M 280,100 A 20,20 0 0,1 300,120" className="stroke-outline/20 stroke-dasharray-[2_2]" />
+          {/* Sagging softwood roof trusses */}
+          <path d="M 40,40 Q 200,65 360,40" className="stroke-outline/25 stroke-dasharray-[2_4]" />
+          <path d="M 120,45 L 120,55 M 200,50 L 200,60 M 280,45 L 280,55" className="stroke-outline/20" />
+          {/* Damp penetration lines in corner */}
+          <path d="M 42,145 Q 55,140 50,158" className="stroke-outline/30" />
+          <path d="M 45,147 Q 52,143 48,155" className="stroke-outline/20" />
+          {/* Room labels */}
+          <text x="80" y="90" textAnchor="middle" className="font-sans text-[5.5px] fill-secondary/60 font-semibold tracking-wider">CELLULAR RM-01</text>
+          <text x="160" y="90" textAnchor="middle" className="font-sans text-[5.5px] fill-secondary/60 font-semibold tracking-wider">DARK CELL-02</text>
+          <text x="240" y="90" textAnchor="middle" className="font-sans text-[5.5px] fill-secondary/60 font-semibold tracking-wider">CRAMPED RM-03</text>
+          <text x="320" y="90" textAnchor="middle" className="font-sans text-[5.5px] fill-secondary/60 font-semibold tracking-wider">UTILITY RM-04</text>
+          {/* Title label */}
+          <text x="200" y="182" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">OUTDATED CLOSED VOLUMES // SEC. 01</text>
         </svg>
       ),
       afterSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="50" y="30" width="300" height="140" className="stroke-primary/45 fill-primary/[0.005]" />
-          <path d="M 80,120 C 80,80 140,70 180,85 C 220,100 260,70 300,85" className="stroke-primary/40" />
-          <rect x="110" y="150" width="180" height="15" rx="1" className="stroke-outline/45" />
-          <circle cx="200" cy="50" r="5" className="stroke-primary/30 fill-primary/10" />
-          <text x="200" y="185" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">OPEN TRAVERTINE LOUNGE</text>
+          {/* Outline floor plan */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-primary/45 fill-primary/[0.005]" />
+          {/* Travertine paving lines */}
+          <line x1="40" y1="60" x2="360" y2="60" className="stroke-outline/10" />
+          <line x1="40" y1="100" x2="360" y2="100" className="stroke-outline/10" />
+          <line x1="40" y1="140" x2="360" y2="140" className="stroke-outline/10" />
+          <line x1="120" y1="20" x2="120" y2="60" className="stroke-outline/10" />
+          <line x1="240" y1="60" x2="240" y2="100" className="stroke-outline/10" />
+          <line x1="160" y1="100" x2="160" y2="140" className="stroke-outline/10" />
+          {/* High-performance glass double-line facade */}
+          <line x1="40" y1="30" x2="360" y2="30" className="stroke-primary/60 stroke-[1.5]" />
+          <line x1="40" y1="26" x2="360" y2="26" className="stroke-primary/30 stroke-[0.8]" />
+          {/* Concrete column reinforced jackets with cross-hatch */}
+          <rect x="100" y="55" width="16" height="16" rx="2" className="stroke-primary/70 fill-primary/10" />
+          <line x1="100" y1="55" x2="116" y2="71" className="stroke-primary/40" />
+          <line x1="116" y1="55" x2="100" y2="71" className="stroke-primary/40" />
+          
+          <rect x="280" y="115" width="16" height="16" rx="2" className="stroke-primary/70 fill-primary/10" />
+          <line x1="280" y1="115" x2="296" y2="131" className="stroke-primary/40" />
+          <line x1="296" y1="115" x2="280" y2="131" className="stroke-primary/40" />
+          {/* Large curved custom lounge sofa outline */}
+          <path d="M 80,105 C 80,135 140,145 200,145 C 260,145 320,135 320,105" className="stroke-primary/50" />
+          <rect x="150" y="105" width="100" height="18" className="stroke-primary/40 fill-surface" />
+          {/* Spotlights and ambient lighting tracks */}
+          <circle cx="100" cy="40" r="3" className="stroke-primary/50 fill-primary/20" />
+          <path d="M 90,70 L 100,40 L 110,70" className="stroke-primary/30 stroke-dasharray-[1_2]" />
+          
+          <circle cx="200" cy="40" r="3" className="stroke-primary/50 fill-primary/20" />
+          <path d="M 185,80 L 200,40 L 215,80" className="stroke-primary/30 stroke-dasharray-[1_2]" />
+          
+          <circle cx="300" cy="40" r="3" className="stroke-primary/50 fill-primary/20" />
+          <path d="M 290,70 L 300,40 L 310,70" className="stroke-primary/30 stroke-dasharray-[1_2]" />
+          {/* Label inside the floor plan */}
+          <text x="200" y="85" textAnchor="middle" className="font-sans text-[6px] fill-primary font-bold uppercase tracking-wider">DOUBLE-HEIGHT VOLUMETRIC LOUNGE</text>
+          {/* Title label */}
+          <text x="200" y="182" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">OPEN TRAVERTINE LOUNGE // COORD. 01</text>
         </svg>
       )
     },
     {
       title: "Kitchens",
       subtitle: "The Obsidian Atelier",
-      desc: "Old compartmentalized cabinetry restructured to an open-plan culinary center featuring custom obsidian oak cabinetry and modular double-islands.",
-      beforeDesc: "Outdated laminate cabinets, visual seam corridors, and separate tiny operational utility closets.",
-      afterDesc: "Zero-gap obsidian casework, integrated downdraft hobs, double travertine kitchen islands, and modular slide drawer coordinates.",
+      beforeDesc: "Segmented cellular galley style restricted by rigid drywalls, outdated high-pressure laminate counters, failing grease traps, and a dark utility closet.",
+      afterDesc: "An architectural culinary gallery centered around dual monolithic ivory travertine prep islands with integrated downdraft induction cooktops, zero-gap custom obsidian oak casework, and soft ambient light tracks.",
       details: ["Travertine double island cast", "German soft-close drawer slides", "Concealed operational pantry"],
       beforeSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="60" y="30" width="280" height="140" className="stroke-outline/35" />
-          <line x1="60" y1="100" x2="340" y2="100" className="stroke-outline/20" />
-          <line x1="150" y1="30" x2="150" y2="170" className="stroke-outline/15" />
-          <line x1="250" y1="30" x2="250" y2="170" className="stroke-outline/15" />
-          <text x="200" y="185" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">COMPARTMENTAL KITCHEN DRAFTS</text>
+          {/* Outer floor plan */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-outline/35" />
+          {/* Left closed counter */}
+          <rect x="40" y="30" width="40" height="120" className="stroke-outline/30" />
+          {/* Right closed counter */}
+          <rect x="320" y="30" width="40" height="120" className="stroke-outline/30" />
+          {/* Center segregation drywall partition */}
+          <rect x="180" y="20" width="15" height="140" className="stroke-outline/35 fill-outline/5" />
+          {/* Isolated utility closet */}
+          <rect x="195" y="20" width="60" height="50" className="stroke-outline/30" />
+          {/* Utility closet door swing */}
+          <line x1="195" y1="50" x2="210" y2="65" className="stroke-outline/25" />
+          <path d="M 210,65 A 15,15 0 0,1 195,70" className="stroke-outline/25 stroke-dasharray-[1_2]" />
+          {/* Labels */}
+          <text x="60" y="90" textAnchor="middle" className="font-sans text-[5px] fill-secondary/60 font-semibold tracking-wider rotate-90 origin-center">GALLEY COUNTER 01</text>
+          <text x="340" y="90" textAnchor="middle" className="font-sans text-[5px] fill-secondary/60 font-semibold tracking-wider rotate-90 origin-center">GALLEY COUNTER 02</text>
+          <text x="187" y="90" textAnchor="middle" className="font-sans text-[4.5px] fill-secondary/60 font-semibold tracking-wider rotate-90 origin-center">DRYWALL PARTITION</text>
+          <text x="225" y="45" textAnchor="middle" className="font-sans text-[5px] fill-secondary/60 font-semibold tracking-wider">UTILITY CLOSET</text>
+          {/* Title label */}
+          <text x="200" y="182" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">COMPARTMENTAL galley KITCHEN // SEC. 02</text>
         </svg>
       ),
       afterSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="60" y="30" width="280" height="140" rx="3" className="stroke-primary/45 fill-primary/[0.005]" />
-          <line x1="60" y1="90" x2="340" y2="90" className="stroke-outline/20" />
-          <rect x="90" y="45" width="100" height="30" className="stroke-primary/35" />
-          <rect x="210" y="45" width="100" height="30" className="stroke-primary/35" />
-          <text x="200" y="185" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">DOUBLE ISLAND CULINARY SYSTEM</text>
+          {/* Outer floor plan */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-primary/45 fill-primary/[0.005]" />
+          {/* Dotted Demolished drywall guide line */}
+          <rect x="180" y="20" width="15" height="140" className="stroke-primary/20 stroke-dasharray-[2_3]" />
+          <text x="187" y="100" textAnchor="middle" className="font-sans text-[4.5px] fill-primary/30 font-semibold uppercase tracking-wider rotate-90 origin-center">DEMOLISHED WALL</text>
+          {/* Back wall modular zero-gap obsidian cabinetry casework */}
+          <rect x="40" y="25" width="22" height="130" className="stroke-primary/65 fill-primary/10" />
+          <line x1="40" y1="50" x2="62" y2="50" className="stroke-primary/40" />
+          <line x1="40" y1="75" x2="62" y2="75" className="stroke-primary/40" />
+          <line x1="40" y1="100" x2="62" y2="100" className="stroke-primary/40" />
+          <line x1="40" y1="125" x2="62" y2="125" className="stroke-primary/40" />
+          {/* Double monolithic travertine kitchen islands */}
+          <rect x="95" y="35" width="55" height="90" rx="1.5" className="stroke-primary/55 fill-primary/[0.01]" />
+          <text x="122.5" y="50" textAnchor="middle" className="font-sans text-[5.5px] fill-primary font-bold">PREP ISLAND</text>
+          {/* Induction cooktop detail on island 1 */}
+          <circle cx="122.5" cy="75" r="7" className="stroke-primary/45" />
+          <circle cx="122.5" cy="95" r="5" className="stroke-primary/45" />
+          
+          <rect x="205" y="35" width="55" height="90" rx="1.5" className="stroke-primary/55 fill-primary/[0.01]" />
+          <text x="232.5" y="50" textAnchor="middle" className="font-sans text-[5.5px] fill-primary font-bold">SOCIAL ISLAND</text>
+          {/* Cozy Stool seating outline indicators next to social island */}
+          <rect x="270" y="50" width="8" height="8" rx="1.5" className="stroke-primary/40 fill-surface" />
+          <rect x="270" y="70" width="8" height="8" rx="1.5" className="stroke-primary/40 fill-surface" />
+          <rect x="270" y="90" width="8" height="8" rx="1.5" className="stroke-primary/40 fill-surface" />
+          {/* Cabinetry and overhead spotlight track lines */}
+          <line x1="122.5" y1="20" x2="232.5" y2="20" className="stroke-primary/50 stroke-[1.2]" />
+          {/* Labels */}
+          <text x="45" y="145" textAnchor="start" className="font-sans text-[4.5px] fill-primary font-semibold tracking-wider">OBSIDIAN CASEWORK</text>
+          {/* Title label */}
+          <text x="200" y="182" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">DOUBLE ISLAND CULINARY GALLERY // COORD. 02</text>
         </svg>
       )
     },
     {
       title: "Bedrooms",
       subtitle: "The Linen Atelier",
-      desc: "Smooth luxury rest environment structured through custom padded fabric bedheads, acoustic clay overlays, and suspended warm spotlight drops.",
-      beforeDesc: "Damp wall corners, standard modular wardrobe cabinets, and low-scale ceiling light setups.",
-      afterDesc: "Suspended Belgian linen fabrics, floating ash timber side decks, and custom dimming lighting pathways.",
+      beforeDesc: "Uninsulated bedroom chamber featuring surface damp corner lines, rigid built-in composite board wardrobes, restricted ceiling clearances, and single-source glaring direct overhead lighting.",
+      afterDesc: "A sensory private sanctuary structured through sound-dampening acoustic fabric wall paneling, a floor-to-ceiling floating ash timber dressing deck, modular dimmable lighting channels, and integrated linen upholstered partitions.",
       details: ["Belgian linen fabric tufting", "Honed wood floating structures", "Warm dimmer lighting channels"],
       beforeSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="70" y="40" width="260" height="120" className="stroke-outline/35" />
-          <line x1="70" y1="100" x2="330" y2="100" className="stroke-outline/20" />
-          <text x="200" y="180" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">STANDARD BEDROOM CABINETRY</text>
+          {/* Outer boundary */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-outline/35" />
+          {/* Compact bedroom bed in corner */}
+          <rect x="40" y="30" width="100" height="85" className="stroke-outline/30" />
+          <rect x="45" y="40" width="20" height="20" className="stroke-outline/25" />
+          <rect x="45" y="80" width="20" height="20" className="stroke-outline/25" />
+          {/* Boxy wardrobe units */}
+          <rect x="180" y="30" width="140" height="32" className="stroke-outline/30" />
+          <line x1="226" y1="30" x2="226" y2="62" className="stroke-outline/25" />
+          <line x1="272" y1="30" x2="272" y2="62" className="stroke-outline/25" />
+          {/* Direct ceiling spotlight glow indicator */}
+          <circle cx="200" cy="110" r="10" className="stroke-outline/25 stroke-dasharray-[1_3]" />
+          {/* Moisture / damp wall lines */}
+          <path d="M 40,30 Q 55,25 60,40 T 70,30" className="stroke-outline/30" />
+          <text x="50" y="55" textAnchor="start" className="font-sans text-[4px] fill-secondary/50 font-semibold rotate-90 origin-left">DAMP SURFACE</text>
+          {/* Labels */}
+          <text x="90" y="72" textAnchor="middle" className="font-sans text-[5px] fill-secondary/60 font-semibold tracking-wider">COMPACT BED</text>
+          <text x="250" y="48" textAnchor="middle" className="font-sans text-[5px] fill-secondary/60 font-semibold tracking-wider">RIGID COMPOSITE WARDROBE</text>
+          {/* Title label */}
+          <text x="200" y="180" textAnchor="middle" className="font-sans text-[7px] fill-secondary font-bold uppercase tracking-wider">CRAMPED CLOSED BEDROOM // SEC. 03</text>
         </svg>
       ),
       afterSvg: (
         <svg className="w-full h-full text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 200">
-          <rect x="70" y="40" width="260" height="120" rx="2" className="stroke-primary/45 fill-primary/[0.003]" />
-          <rect x="90" y="90" width="220" height="40" rx="1.5" className="stroke-primary/45 fill-primary/5" />
-          <circle cx="200" cy="65" r="5" className="stroke-primary/40 fill-surface" />
-          <text x="200" y="180" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">COZY LINEN BED CHAMBER</text>
+          {/* Outer boundary */}
+          <rect x="40" y="20" width="320" height="140" className="stroke-primary/45 fill-primary/[0.003]" />
+          {/* Ribbed acoustic clay wall panels backing */}
+          <line x1="72" y1="20" x2="72" y2="160" className="stroke-primary/30" />
+          <line x1="68" y1="20" x2="68" y2="160" className="stroke-primary/25" />
+          <line x1="64" y1="20" x2="64" y2="160" className="stroke-primary/20" />
+          <line x1="60" y1="20" x2="60" y2="160" className="stroke-primary/15" />
+          <text x="64" y="90" textAnchor="middle" className="font-sans text-[4.5px] fill-primary/30 font-semibold uppercase tracking-wider rotate-90 origin-center">ACOUSTIC BACKING</text>
+          {/* Padded Belgian linen bedhead backing */}
+          <rect x="76" y="25" width="8" height="130" rx="1.5" className="stroke-primary/55 fill-primary/10" />
+          {/* Elegant king bed centered beautifully */}
+          <rect x="84" y="35" width="105" height="110" rx="3" className="stroke-primary/55 fill-primary/[0.005]" />
+          {/* Pillars of luxury pillows */}
+          <rect x="92" y="45" width="18" height="28" rx="2" className="stroke-primary/45 fill-surface" />
+          <rect x="92" y="90" width="18" height="28" rx="2" className="stroke-primary/45 fill-surface" />
+          <text x="135" y="90" textAnchor="middle" className="font-sans text-[5.5px] fill-primary font-bold">KING SANCTUARY BED</text>
+          {/* Floating ash timber dressing deck with wooden grains */}
+          <rect x="235" y="30" width="90" height="120" rx="3.5" className="stroke-primary/50 fill-primary/[0.01]" />
+          <line x1="242" y1="42" x2="318" y2="42" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <line x1="242" y1="62" x2="318" y2="62" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <line x1="242" y1="82" x2="318" y2="82" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <line x1="242" y1="102" x2="318" y2="102" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <line x1="242" y1="122" x2="318" y2="122" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <line x1="242" y1="138" x2="318" y2="138" className="stroke-primary/20 stroke-dasharray-[3_6]" />
+          <text x="280" y="55" textAnchor="middle" className="font-sans text-[5px] fill-primary font-semibold tracking-wider">FLOATING ASH DECK</text>
+          {/* Open closet walk-in guides */}
+          <rect x="235" y="70" width="45" height="80" rx="1" className="stroke-primary/30 stroke-dasharray-[2_2] fill-none" />
+          <text x="257.5" y="110" textAnchor="middle" className="font-sans text-[4.5px] fill-primary/45 font-semibold uppercase tracking-wider rotate-90 origin-center">OPEN WALK-IN</text>
+          {/* Suspended lighting pendants */}
+          <circle cx="100" cy="30" r="3.5" className="stroke-primary/50 fill-primary/20" />
+          <circle cx="100" cy="150" r="3.5" className="stroke-primary/50 fill-primary/20" />
+          {/* Title label */}
+          <text x="200" y="180" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-wider">LUXURY LINEN BED SANCTUARY // COORD. 03</text>
         </svg>
       )
     }
@@ -465,20 +600,20 @@ export default function RenovationsServicePage() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -35 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+                    className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
                   >
                     {/* Left Column: BEFORE SVG */}
-                    <div className="lg:col-span-5 space-y-6">
-                      <div className="relative aspect-[16/10] w-full rounded border border-outline-variant/30 bg-surface-container-lowest p-6 flex flex-col justify-between overflow-hidden shadow-elevated">
+                    <div className="lg:col-span-5 w-full">
+                      <div className="relative w-full rounded border border-outline-variant/30 bg-surface-container-lowest p-6 sm:p-8 flex flex-col justify-between gap-6 min-h-[480px] sm:min-h-[520px] lg:min-h-[550px] overflow-hidden shadow-elevated transition-all duration-300">
                         <div className="flex justify-between text-[9px] uppercase tracking-widest text-secondary/60">
                           <span>BEFORE STATE // ANCHOR</span>
                           <span className="text-primary">[RN-BEFORE]</span>
                         </div>
-                        <div className="relative w-full h-full my-auto flex items-center justify-center">
+                        <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] my-auto flex items-center justify-center overflow-hidden bg-surface/10 rounded border border-outline-variant/10 p-2">
                           {scene.beforeSvg}
                         </div>
-                        <div className="border-t border-outline-variant/15 pt-3">
-                          <p className="font-sans text-[12.5px] leading-relaxed text-secondary italic">"{scene.beforeDesc}"</p>
+                        <div className="border-t border-outline-variant/15 pt-4">
+                          <p className="font-sans text-[13px] sm:text-[14px] leading-relaxed text-secondary italic">"{scene.beforeDesc}"</p>
                         </div>
                       </div>
                     </div>
@@ -493,17 +628,17 @@ export default function RenovationsServicePage() {
                     </div>
 
                     {/* Right Column: AFTER SVG */}
-                    <div className="lg:col-span-5 space-y-6">
-                      <div className="relative aspect-[16/10] w-full rounded border border-primary/30 bg-surface-container-lowest p-6 flex flex-col justify-between overflow-hidden shadow-elevated">
+                    <div className="lg:col-span-5 w-full">
+                      <div className="relative w-full rounded border border-primary/30 bg-surface-container-lowest p-6 sm:p-8 flex flex-col justify-between gap-6 min-h-[480px] sm:min-h-[520px] lg:min-h-[550px] overflow-hidden shadow-elevated transition-all duration-300">
                         <div className="flex justify-between text-[9px] uppercase tracking-widest text-primary font-bold">
                           <span>AFTER STATE // ELEVATION</span>
                           <span>[RN-AFTER]</span>
                         </div>
-                        <div className="relative w-full h-full my-auto flex items-center justify-center">
+                        <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] my-auto flex items-center justify-center overflow-hidden bg-surface/10 rounded border border-primary/10 p-2">
                           {scene.afterSvg}
                         </div>
-                        <div className="border-t border-outline-variant/15 pt-3">
-                          <p className="font-sans text-[12.5px] leading-relaxed text-secondary italic font-semibold">"{scene.afterDesc}"</p>
+                        <div className="border-t border-outline-variant/15 pt-4">
+                          <p className="font-sans text-[13px] sm:text-[14px] leading-relaxed text-secondary italic font-semibold">"{scene.afterDesc}"</p>
                         </div>
                       </div>
                     </div>
