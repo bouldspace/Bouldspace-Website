@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
+import BlueprintReality from "@/components/sections/BlueprintReality";
 import Stats from "@/components/sections/Stats";
 import AboutPreview from "@/components/sections/AboutPreview";
 import Services from "@/components/sections/Services";
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <BlueprintReality />
         <Stats />
         <AboutPreview />
         <Services />

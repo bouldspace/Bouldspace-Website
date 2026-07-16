@@ -73,11 +73,19 @@ export default function Hero() {
             management, and construction solutions from concept to completion.
           </motion.p>
 
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row sm:items-center gap-6 w-full sm:w-auto mt-4">
             <Button variant="primary" showArrow={true} href="/contact">
               Get Free Quote
             </Button>
-            <Button variant="secondary" showArrow={false} href="/projects">
+            <div className="relative flex flex-col items-start w-full sm:w-auto pb-5 sm:pb-0">
+              <Button variant="secondary" showArrow={true} href="/contact?ref=site-visit" className="w-full">
+                Book Site Visit
+              </Button>
+              <span className="absolute left-1 top-full mt-1.5 whitespace-nowrap font-sans text-[11px] sm:text-[12px] font-bold text-on-surface uppercase tracking-widest">
+                ₹2,500 + TA
+              </span>
+            </div>
+            <Button variant="tertiary" showArrow={false} href="/projects" className="sm:ml-2">
               View Portfolio
             </Button>
           </motion.div>

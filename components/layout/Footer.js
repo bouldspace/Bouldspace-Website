@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Button from "../ui/Button";
 
 export default function Footer() {
@@ -9,6 +9,7 @@ export default function Footer() {
     { name: "Our Services", href: "/services" },
     { name: "Development Process", href: "/process" },
     { name: "Featured Projects", href: "/projects" },
+    { name: "Design Idea Gallery", href: "/gallery" },
     { name: "Pricing Models", href: "/pricing" },
     { name: "Knowledge FAQ", href: "/faq" },
     { name: "Contact Studio", href: "/contact" },
@@ -110,17 +111,13 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-4 font-sans text-[14px] text-[#cdc5c0]">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span>Sector 54, Golf Course Road, Gurugram, India</span>
-              </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary shrink-0" />
                 <a href="tel:+917568903919" className="hover:text-primary transition-colors">+91 75689 03919</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <a href="mailto:alirazactae@gmail.com" className="hover:text-primary transition-colors">alirazactae@gmail.com</a>
+                <a href="mailto:bouldspace@gmail.com" className="hover:text-primary transition-colors">bouldspace@gmail.com</a>
               </li>
             </ul>
           </div>

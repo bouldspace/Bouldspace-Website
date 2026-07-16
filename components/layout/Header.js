@@ -61,6 +61,7 @@ export default function Header() {
       links: [
         { name: "Development Process", href: "/process", desc: "Our 6-chapter design-to-handover protocol" },
         { name: "Featured Projects", href: "/projects", desc: "A curated monograph of landmark executions" },
+        { name: "Design Idea Gallery", href: "/gallery", desc: "Visual catalogue of category and material inspirations" },
         { name: "Operating Sectors", href: "/sectors", desc: "High-end residential, corporate, and space habitats" },
       ],
     },
@@ -356,10 +357,10 @@ export default function Header() {
                   General Inquiries
                 </span>
                 <a
-                  href="mailto:alirazactae@gmail.com"
+                  href="mailto:bouldspace@gmail.com"
                   className="font-serif text-[16px] text-on-surface hover:text-primary"
                 >
-                  alirazactae@gmail.com
+                  bouldspace@gmail.com
                 </a>
               </div>
               <Button

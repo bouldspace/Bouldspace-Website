@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, MessageSquare } from "lucide-react";
+import { Phone, Mail, MessageSquare } from "lucide-react";
 import Button from "../ui/Button";
 import Input from "../ui/Input";
 import Card from "../ui/Card";
@@ -123,20 +123,6 @@ export default function Contact() {
                   Our Studio
                 </h3>
                 <div className="space-y-6">
-                  
-                  {/* Address */}
-                  <div className="flex items-start gap-4">
-                    <MapPin className="h-5 w-5 text-primary shrink-0 mt-1" />
-                    <div>
-                      <p className="font-sans text-[11px] font-semibold uppercase tracking-wider text-secondary mb-1">
-                        Visit Us
-                      </p>
-                      <p className="font-sans text-[14px] text-on-surface leading-relaxed">
-                        123 Design Avenue,<br />
-                        XYZ, India XXXXX
-                      </p>
-                    </div>
-                  </div>
 
                   {/* Phone */}
                   <div className="flex items-start gap-4">
@@ -158,8 +144,8 @@ export default function Contact() {
                       <p className="font-sans text-[11px] font-semibold uppercase tracking-wider text-secondary mb-1">
                         Email Us
                       </p>
-                      <a href="mailto:alirazactae@gmail.com" className="font-sans text-[14px] text-on-surface hover:text-primary transition-colors block">
-                        alirazactae@gmail.com
+                      <a href="mailto:bouldspace@gmail.com" className="font-sans text-[14px] text-on-surface hover:text-primary transition-colors block">
+                        bouldspace@gmail.com
                       </a>
                     </div>
                   </div>
