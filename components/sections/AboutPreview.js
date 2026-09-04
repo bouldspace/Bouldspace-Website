@@ -130,15 +130,21 @@ export default function AboutPreview() {
               <div className="absolute bottom-6 right-6 font-sans text-[9px] tracking-widest text-secondary/45 pointer-events-none uppercase text-right leading-relaxed hidden sm:block">
                 <div>Scale: 1:50</div>
                 <div>SEC-04 // LOAD COMPLIANCE</div>
-                <div>BOULDSPACE DRAFTING SHEET</div>
+                <div className="flex items-center justify-end gap-1.5 pt-1">
+                  <img src="/logos/logo-maskable-nobg.svg" alt="" className="h-4 w-auto object-contain opacity-70" />
+                  <span>BOULDSPACE DRAFTING SHEET</span>
+                </div>
               </div>
             </div>
             
             {/* Float badge */}
             <div className="absolute -bottom-8 -left-8 bg-surface p-6 shadow-elevated border border-outline-variant/30 rounded hidden sm:block">
-              <p className="font-serif text-[32px] text-primary mb-1 leading-none font-bold">
-                10+
-              </p>
+              <div className="flex items-center gap-3 mb-1">
+                <p className="font-serif text-[32px] text-primary leading-none font-bold">
+                  10+
+                </p>
+                <img src="/logos/logo-maskable-nobg.svg" alt="Bouldspace" className="h-7 w-auto object-contain" />
+              </div>
               <p className="font-sans text-[11px] font-semibold uppercase tracking-wider text-secondary">
                 Years of Master Craftsmanship
               </p>

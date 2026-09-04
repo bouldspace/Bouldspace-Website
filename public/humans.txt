@@ -1,0 +1,16 @@
+/* TEAM */
+Architectural Director: Bouldspace Studio
+Lead Design & Development: Bouldspace Technical Team
+Contact: bouldspace@gmail.com
+Location: India
+
+/* SITE */
+Standards: HTML5, CSS3, SVG, JSON-LD, Schema.org
+Components: React 19, Next.js 16 (App Router with Turbopack)
+Styling: Tailwind CSS v4
+Animation: GSAP 3 (ScrollTrigger), Framer Motion
+Typography: Libre Caslon Text (Serif), Hanken Grotesk (Sans)
+Design Philosophy: Visionary Design. Precision Execution.
+Language: English
+Doctype: HTML5
+Software: Next.js Turbopack

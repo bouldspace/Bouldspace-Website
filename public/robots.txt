@@ -1,0 +1,37 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+# AI Search Crawlers & LLM Indexers
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Claude-Web
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: Bytespider
+Allow: /
+
+User-Agent: cohere-ai
+Allow: /
+
+Sitemap: https://bouldspace.com/sitemap.xml
+Host: https://bouldspace.com

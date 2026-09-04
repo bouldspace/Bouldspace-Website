@@ -11,8 +11,20 @@ export default function FinalCTA() {
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none blueprint-grid" />
 
       <div className="max-w-4xl mx-auto px-6 md:px-12 relative z-10 space-y-8 flex flex-col items-center">
-        <FadeIn direction="up" duration={0.8}>
-          <span className="font-sans text-[11px] font-semibold uppercase tracking-widest text-primary bg-primary/5 px-3 py-1 rounded-full">
+        <FadeIn direction="up" duration={0.8} className="flex flex-col items-center gap-4">
+          <div className="flex items-center gap-3.5">
+            <img
+              src="/logos/logo-maskable-nobg.svg"
+              alt="Bouldspace Emblem"
+              className="h-10 sm:h-12 w-auto object-contain shrink-0"
+            />
+            <img
+              src="/logos/logo-wordmark-nobg.svg"
+              alt="Bouldspace"
+              className="h-6 sm:h-7 w-auto object-contain"
+            />
+          </div>
+          <span className="font-sans text-[11px] font-semibold uppercase tracking-widest text-primary bg-primary/5 px-4 py-1.5 rounded-full border border-primary/20">
             Private Commission
           </span>
         </FadeIn>

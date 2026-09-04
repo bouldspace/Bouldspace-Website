@@ -120,3 +120,26 @@ body {
     linear-gradient(to right, rgba(136, 114, 107, 0.04) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(136, 114, 107, 0.04) 1px, transparent 1px);
 }
+
+/* Lenis Smooth Scrolling */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+

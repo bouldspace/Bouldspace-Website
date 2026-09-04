@@ -77,12 +77,18 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group focus:outline-none">
-            <span className="font-serif text-[24px] font-bold tracking-tight text-on-surface transition-colors duration-300 group-hover:text-primary">
-              BOULDSPACE
-            </span>
-            <div className="h-1.5 w-1.5 rounded-full bg-primary" />
+          {/* Logo & Wordmark Brand Lockup */}
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none py-1" aria-label="Bouldspace Home">
+            <img
+              src="/logos/logo-maskable-nobg.svg"
+              alt="Bouldspace Emblem"
+              className="h-9 sm:h-10 md:h-11 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+            />
+            <img
+              src="/logos/logo-wordmark-nobg.svg"
+              alt="Bouldspace"
+              className="h-4.5 sm:h-5 md:h-5.5 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -261,6 +267,20 @@ export default function Header() {
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="fixed inset-0 top-[73px] bg-surface z-40 lg:hidden flex flex-col p-8 border-t border-outline-variant/30 overflow-y-auto"
           >
+            <div className="flex items-center justify-between border-b border-outline-variant/15 pb-4 mb-2">
+              <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2.5">
+                <img
+                  src="/logos/logo-maskable-nobg.svg"
+                  alt="Bouldspace Emblem"
+                  className="h-8 w-auto object-contain shrink-0"
+                />
+                <img
+                  src="/logos/logo-wordmark-nobg.svg"
+                  alt="Bouldspace"
+                  className="h-4.5 w-auto object-contain"
+                />
+              </Link>
+            </div>
             <nav className="flex flex-col gap-4 my-auto overflow-y-auto py-4">
               {navGroups.map((group, idx) => {
                 const isGroupExpanded = expandedGroup === group.name;

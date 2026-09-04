@@ -1,0 +1,111 @@
+# Bouldspace - Complete Architecture & Construction Specification Monograph
+
+> Bouldspace is a premier architectural consultancy, project management consultancy (PMC), and turnkey design-build studio based in India. The firm operates on the guiding philosophy: "Visionary Design. Precision Execution."
+
+---
+
+## 1. Company Profile
+
+- **Brand Name**: Bouldspace
+- **Industry**: Architecture, Luxury Interior Design, Project Management Consultancy (PMC), Turnkey Civil Construction, Structural Renovation
+- **Geographic Reach**: National (Delhi NCR, Gurugram, Jaipur, Kota, Bengaluru, Chennai, and nationwide outstation commissions)
+- **Primary Website**: https://bouldspace.com
+- **Direct Mail**: bouldspace@gmail.com
+- **Executive Telephone**: +91 75689 03919
+- **Official WhatsApp Advisory**: https://wa.me/917568903919
+
+---
+
+## 2. Core Service Offerings
+
+### 2.1 Architecture Planning
+- Conceptual volumetric massing and sun path orientation analysis.
+- Micro-ventilated parametric facades and acoustic clay insulation envelopes.
+- Civil and structural load design with seismic compliance and rainwater harvesting integration.
+- Structural deflection testing with strict margins below 0.05%.
+
+### 2.2 Interior Curation
+- Contextual luxury curation prioritizing natural travertine slabs, wire-brushed ash timbers, and honed stone floors.
+- Custom flush casework with zero visible seams and German-engineered soft-close drawer tracks.
+- Low-glare concealed ambient LED coves designed to cast soft shadow boundaries without direct light glare.
+
+### 2.3 Modular Kitchens
+- Dual-island culinary configurations: dedicated prep monolith with integrated induction/gas hobs and separate social dining island.
+- Obsidian matte casework cabinetry treated with anti-fingerprint and moisture-resistant coatings.
+- Concealed operational pantries and automated vertical pull-out larder units.
+
+### 2.4 Furniture & Decor Curation
+- Handcrafted solid wire-brushed ash and teak timber tables and seating.
+- Belgian linen fabrics, natural shearling textures, and organic clay vessel decor.
+- Curved bespoke lounge sofas tailored to double-height spatial volumes.
+
+### 2.5 Home Decor & Dressing
+- Sensory curation of lighting channels, custom tufted bedheads, and sculptural accents.
+- Tactile fabric partitions, acoustic wall dressings, and dimmable lighting paths.
+
+### 2.6 Renovations & Retrofits
+- Demolition of non-load-bearing partitions to convert cellular layouts into open-plan volumetric spaces.
+- High-strength structural concrete column jackets and wide-span carbon fiber wraps.
+- Multi-layered water-stop membrane retrofits for complete damp protection.
+
+### 2.7 Project Management Consultancy (PMC)
+- Critical Path Method (CPM) project scheduling and float-buffer algorithms.
+- Independent third-party bill audits and contractor clearance verification.
+- Continuous on-site quality inspection including ultrasonic concrete testing and clash-free 3D MEP coordination.
+
+### 2.8 Turnkey Solutions
+- Single-point contractual accountability covering architecture, municipal liaison, civil construction, interior casework, MEP systems, and final styling.
+- Backed by an industry-leading 10-year structural warranty and comprehensive handover documentation.
+
+---
+
+## 3. Operational 6-Chapter Development Protocol
+
+1. **Chapter 01 // Discovery & Brief Alignment**: Deep-dive client consultation to map architectural aspirations, budget frameworks, spatial requirements, and lifestyle coordinates.
+2. **Chapter 02 // Feasibility & Strategic Concept**: On-site soil analysis, solar exposure mapping, zoning regulations audit, and structural concept drafting.
+3. **Chapter 03 // Detailed Design & Engineering**: 3D volumetric modeling, clash-free MEP system design, material specification schedules, and cost estimation.
+4. **Chapter 04 // Procurement & Vendor Orchestration**: Selection of certified specialty artisans, raw material testing (travertine, steel, wood), and fabrication oversight.
+5. **Chapter 05 // Precision Execution & Site Supervision**: Daily site inspections, ultrasonic concrete quality checks, moisture barrier audits, and schedule milestone monitoring.
+6. **Chapter 06 // Detailing, Styling & Project Handover**: Snag-list zeroing, ambient lighting commissioning, bespoke furniture positioning, and keys handover backed by a 10-year warranty.
+
+---
+
+## 4. Consultation & Site Visit Framework
+
+- **Initial Consultation**: Free remote preliminary scoping via video conference or studio meeting.
+- **Local Site Visit Assessment**: ₹2,500 – ₹7,500 based on property parcel scale and topological complexity.
+  - *100% Credit Guarantee*: The entire assessment fee is credited directly against the conceptual retainer invoice upon project onboarding.
+- **Outstation Site Visits**: Base rate starting at ₹15,000 for travel within India. All transportation (flights, local transit) and lodging are billed transparently at exact actual costs with zero markup.
+
+---
+
+## 5. Landmark Portfolio Projects
+
+- **The Travertine Pavilion**: High-end residential penthouse featuring vein-matched honed ivory travertine wall slabs, curved plaster partitions, and a double-height lounge.
+- **The Concrete Metamorphosis**: Total structural renovation in Gurugram featuring reinforced concrete column jackets, wide-span glass curtain facades, and raw brutalist elegance.
+- **Hotel Classic Sapphire (Bundi Kota, RJ)**: Boutique luxury hospitality execution integrating contextual heritage aesthetics with contemporary amenities.
+- **Hotel Lilac (Kota, RJ)**: Full-scale commercial hospitality interior curation and turnkey execution.
+- **The Precision Assembly Facility (Chennai)**: Integrated turnkey commercial-industrial build adhering to precision engineering tolerances.
+
+---
+
+## 6. Official Sitemaps & Links
+
+- Homepage: https://bouldspace.com
+- About Studio: https://bouldspace.com/about
+- Services: https://bouldspace.com/services
+- Architecture: https://bouldspace.com/services/architecture
+- Interiors: https://bouldspace.com/services/interior-design
+- Kitchens: https://bouldspace.com/services/modular-kitchen
+- Furniture: https://bouldspace.com/services/furniture-decor
+- Home Dressing: https://bouldspace.com/services/home-decor
+- Renovations: https://bouldspace.com/services/renovations
+- PMC: https://bouldspace.com/services/pmc
+- Turnkey: https://bouldspace.com/services/turnkey
+- Development Process: https://bouldspace.com/process
+- Featured Projects: https://bouldspace.com/projects
+- Design Idea Gallery: https://bouldspace.com/gallery
+- Operating Sectors: https://bouldspace.com/sectors
+- Pricing & Consultations: https://bouldspace.com/pricing
+- Knowledge FAQ: https://bouldspace.com/faq
+- Contact: https://bouldspace.com/contact

@@ -52,7 +52,7 @@ export default function Hero() {
         >
           <motion.span
             variants={itemVariants}
-            className="font-sans text-[11px] font-bold uppercase tracking-widest text-primary border-l-2 border-primary pl-3"
+            className="font-serif text-[18px] sm:text-[20px] text-secondary font-normal"
           >
             We Design Spaces That Inspire
           </motion.span>

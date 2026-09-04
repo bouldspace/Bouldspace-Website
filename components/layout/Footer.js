@@ -43,12 +43,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pt-8 pb-16">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="flex items-center gap-2">
-              <span className="font-serif text-[28px] font-bold tracking-tight text-surface-bright">
-                BOULDSPACE
-              </span>
-              <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-            </div>
+            <Link href="/" className="inline-flex items-center gap-3.5 focus:outline-none py-1 group" aria-label="Bouldspace Home">
+              <img
+                src="/logos/logo-maskable-nobg.svg"
+                alt="Bouldspace Emblem"
+                className="h-10 sm:h-12 md:h-13 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+              />
+              <img
+                src="/logos/logo-wordmark-nobg.svg"
+                alt="Bouldspace"
+                className="h-6 sm:h-7 md:h-8 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+              />
+            </Link>
             <p className="font-sans text-[15px] leading-relaxed text-[#cdc5c0] max-w-sm">
               We balance aesthetic intelligence with structural rigor to manage, consult, and build high-end residential, commercial, and exploratory space architecture.
             </p>
@@ -125,9 +131,16 @@ export default function Footer() {
 
         {/* Bottom Section - Copyright & Disclaimers */}
         <div className="pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-          <p className="font-sans text-[12px] text-[#cdc5c0]">
-            © {new Date().getFullYear()} Bouldspace. Crafted with precision & purpose. All rights reserved.
-          </p>
+          <div className="flex items-center justify-center md:justify-start gap-3 font-sans text-[12px] text-[#cdc5c0]">
+            <img
+              src="/logos/logo-maskable-nobg.svg"
+              alt="Bouldspace"
+              className="h-5 w-auto object-contain shrink-0"
+            />
+            <span>
+              © {new Date().getFullYear()} Bouldspace. Crafted with precision & purpose. All rights reserved.
+            </span>
+          </div>
           <div className="flex gap-8 font-sans text-[12px]">
             <a href="#" className="text-[#cdc5c0] hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="text-[#cdc5c0] hover:text-primary transition-colors">Terms of Operations</a>

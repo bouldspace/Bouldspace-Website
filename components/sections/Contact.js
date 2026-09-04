@@ -119,9 +119,23 @@ export default function Contact() {
           <aside className="lg:col-span-4 space-y-12">
             <FadeIn direction="right" delay={0.1} duration={0.8}>
               <Card variant="elevated" className="bg-surface-container-lowest p-8 border border-outline-variant/15 shadow-elevated">
-                <h3 className="font-serif text-[24px] text-on-surface mb-8 border-b border-outline-variant/30 pb-4">
-                  Our Studio
-                </h3>
+                <div className="mb-8 border-b border-outline-variant/30 pb-5">
+                  <div className="flex items-center gap-3 mb-2.5">
+                    <img
+                      src="/logos/logo-maskable-nobg.svg"
+                      alt="Bouldspace Emblem"
+                      className="h-8 sm:h-9 w-auto object-contain shrink-0"
+                    />
+                    <img
+                      src="/logos/logo-wordmark-nobg.svg"
+                      alt="Bouldspace"
+                      className="h-5 sm:h-5.5 w-auto object-contain"
+                    />
+                  </div>
+                  <span className="font-sans text-[10px] uppercase tracking-widest text-primary font-bold block">
+                    Architectural Headquarters
+                  </span>
+                </div>
                 <div className="space-y-6">
 
                   {/* Phone */}
