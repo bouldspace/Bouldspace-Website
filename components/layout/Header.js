@@ -16,14 +16,24 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      const scrollY = window.scrollY || (window.__lenis ? window.__lenis.scroll : 0);
+      if (scrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    if (window.__lenis) {
+      window.__lenis.on("scroll", handleScroll);
+    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (window.__lenis) {
+        window.__lenis.off("scroll", handleScroll);
+      }
+    };
   }, []);
 
   const toggleGroup = (groupName) => {
@@ -78,17 +88,25 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo & Wordmark Brand Lockup */}
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none py-1" aria-label="Bouldspace Home">
+          <Link href="/" className="flex items-center group focus:outline-none py-1" aria-label="Bouldspace Home">
             <img
               src="/logos/logo-maskable-nobg.svg"
               alt="Bouldspace Emblem"
               className="h-9 sm:h-10 md:h-11 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
             />
-            <img
-              src="/logos/logo-wordmark-nobg.svg"
-              alt="Bouldspace"
-              className="h-4.5 sm:h-5 md:h-5.5 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
-            />
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center ${
+                isScrolled
+                  ? "max-w-0 opacity-0 ml-0 pointer-events-none -translate-x-2"
+                  : "max-w-[240px] opacity-100 ml-2.5 sm:ml-3 translate-x-0"
+              }`}
+            >
+              <img
+                src="/logos/logo-wordmark-nobg.svg"
+                alt="Bouldspace"
+                className="h-4.5 sm:h-5 md:h-5.5 w-auto object-contain max-w-none transition-opacity duration-300 group-hover:opacity-90"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

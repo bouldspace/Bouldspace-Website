@@ -12,6 +12,7 @@ export default function Footer() {
     { name: "Design Idea Gallery", href: "/gallery" },
     { name: "Pricing Models", href: "/pricing" },
     { name: "Knowledge FAQ", href: "/faq" },
+    { name: "Work With Us", href: "/work-with-us" },
     { name: "Contact Studio", href: "/contact" },
   ];
 
