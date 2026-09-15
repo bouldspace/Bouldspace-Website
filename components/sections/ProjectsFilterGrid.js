@@ -9,7 +9,6 @@ export default function ProjectsFilterGrid() {
 
   const categories = [
     "All",
-    "Residential",
     "Hospitality",
     "High-End Residences",
   ];
@@ -34,30 +33,12 @@ export default function ProjectsFilterGrid() {
       gridClass: "md:col-span-4 lg:col-span-5 aspect-[3/4]",
     },
     {
-      img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/3a/cf/34/entrance.jpg?w=1400&h=800&s=1",
-      title: "Hotel ORTUS",
-      category: "Hospitality",
-      location: "Kota, RJ",
-      status: "Completed",
-      commId: "BS-HO-03",
-      gridClass: "md:col-span-6 lg:col-span-4 aspect-[4/3]",
-    },
-    {
-      img: "https://housing-images.n7net.in/4f2250e8/fdabfc1c1a251452db90acc3a0d78ec3/v6/fs-large/sunprime_infratech_sunprime_infratech_skyline-instrumentation_limited_colony-kota-sunprime_infratech_pvtltd.jpg",
-      title: "Skyline Kota",
-      category: "Residential",
-      location: "Kota, RJ",
-      status: "Completed",
-      commId: "BS-SKL-04",
-      gridClass: "md:col-span-6 lg:col-span-8 aspect-[16/10]",
-    },
-    {
       img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/543027436.jpg?k=103a5d86c6d6940f386b8c679d879bbfb05491e251c280a27dc0dc1a698296ab&o=",
       title: "Hotel Classic Sapphire",
       category: "Hospitality",
       location: "Bundi Kota, RJ",
       status: "Completed",
-      commId: "BS-HCS-05",
+      commId: "BS-HCS-03",
       gridClass: "md:col-span-6 lg:col-span-5 aspect-[3/4]",
     },
     {
@@ -66,7 +47,7 @@ export default function ProjectsFilterGrid() {
       category: "Hospitality",
       location: "Kota, RJ",
       status: "Completed",
-      commId: "BS-HCP-06",
+      commId: "BS-HCP-04",
       gridClass: "md:col-span-6 lg:col-span-7 aspect-[4/3]",
     },
   ];

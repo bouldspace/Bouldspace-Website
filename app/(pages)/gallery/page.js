@@ -31,7 +31,7 @@ export default async function GalleryPage() {
         files.forEach((file) => {
           if (/\.(jpg|jpeg|png|webp|svg)$/i.test(file)) {
             images.push({
-              src: `/design idea gallery/${subdir}/${file}`,
+              src: encodeURI(`/design idea gallery/${subdir}/${file}`),
               category: categoryName,
               name: `${categoryName} Inspiration`
             });

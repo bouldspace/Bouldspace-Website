@@ -133,7 +133,7 @@ export default function SectorsPage() {
       name: "Institutional",
       tagline: "Educational environments & community masterplanning.",
       desc: "Structuring academic campuses, public educational environments, community infrastructures, and healthcare facilities. We balance high-volume public zoning laws, solar path wind optimizations, and double-height concrete lobby clearance bounds.",
-      commission: "Hotel Ortus Entrance Masterplan",
+      commission: "Civic Academy Entrance Masterplan",
       location: "Education District, Gurugram",
       services: ["High-volume municipal heights zoning reviews", "Educational masterplan clearance blueprints", "Clean sustainable wind & solar orientations"],
       svg: (
