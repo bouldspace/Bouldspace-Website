@@ -11,7 +11,10 @@ import {
   FolderCheck, 
   ShieldCheck, 
   Hammer, 
-  Boxes 
+  Boxes,
+  ClipboardCheck,
+  Calculator,
+  FileCheck2 
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -156,7 +159,7 @@ export default function ServicesPage() {
             className="absolute bottom-8 right-8 md:right-16 z-20 font-sans text-[9px] tracking-[0.25em] uppercase text-secondary/60 text-right hidden sm:flex flex-col gap-1.5 select-none pointer-events-none"
           >
             <span className="text-primary font-bold">Execution Path</span>
-            <span>08 SERVICES // 04 MONOGRAPHS</span>
+            <span>11 SERVICES // 04 MONOGRAPHS</span>
             <span>COORD: 28.4595° N, 77.0266° E</span>
           </motion.div>
         </section>
@@ -778,6 +781,272 @@ export default function ServicesPage() {
               </div>
             </div>
 
+            {/* SERVICE 09: PROFESSIONAL PROJECT ASSESSMENT */}
+            <div id="project-assessment" className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+              
+              {/* Left Side: Editorial brief (5 Columns) */}
+              <div className="lg:col-span-5 space-y-8">
+                <FadeIn direction="right" duration={0.8} className="space-y-6">
+                  <div className="h-12 w-12 rounded-full bg-primary/5 flex items-center justify-center">
+                    <ClipboardCheck className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="font-sans text-[10px] font-bold uppercase tracking-[0.25em] text-primary block">Service 09 // Diagnostic Authority</span>
+                  
+                  <h2 className="font-serif text-[32px] sm:text-[42px] leading-tight text-on-surface font-normal">
+                    Professional Project Assessment
+                  </h2>
+                  
+                  <p className="font-sans text-[15px] leading-relaxed text-secondary">
+                    Before committing capital to land, acquisition, or structural transformation, an authoritative diagnostic assessment is indispensable. We deploy senior structural engineers and architects to evaluate soil bearing stability, boundary tolerances, municipal zoning restrictions, daylight dynamics, and structural health to de-risk your investment.
+                  </p>
+
+                  <ul className="space-y-2.5 font-sans text-[13px] text-secondary border-t border-outline-variant/20 pt-4 pb-2">
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Comprehensive on-site physical and structural diagnostics</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Municipal setbacks, FSI clearance & zoning feasibility audits</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Soil strata, load-bearing viability & environmental flow mapping</li>
+                  </ul>
+
+                  <div className="pt-2">
+                    <Button variant="secondary" showArrow={true} href="/contact?service=project-assessment">
+                      Schedule Project Assessment
+                    </Button>
+                  </div>
+                </FadeIn>
+              </div>
+
+              {/* Right Side: CAD Diagnostic Plot SVG (7 Columns) */}
+              <div className="lg:col-span-7">
+                <FadeIn direction="left" duration={1.0}>
+                  <div className="relative aspect-[16/10] w-full rounded border border-outline-variant/30 bg-surface-container p-6 sm:p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group select-none">
+                    <div className="absolute inset-0 opacity-15 blueprint-grid pointer-events-none" />
+                    <div className="absolute inset-4 border border-outline/10 pointer-events-none" />
+                    
+                    <div className="flex justify-between items-start text-[9px] tracking-widest text-outline uppercase font-bold relative z-10">
+                      <span>DIAGNOSTIC SHEET // PA-109</span>
+                      <span className="text-primary">[GEOMETRIC PARCEL & STRUCTURAL AUDIT]</span>
+                    </div>
+
+                    <div className="relative w-full h-full my-auto flex items-center justify-center py-4">
+                      <svg className="w-10/12 h-10/12 text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 240">
+                        {/* Site boundary outer frame */}
+                        <polygon points="60,40 340,40 310,190 80,190" className="stroke-outline/45 stroke-[1.2]" />
+                        
+                        {/* Setback line */}
+                        <polygon points="85,60 315,60 295,170 100,170" className="stroke-primary/35 stroke-dasharray-[3_5] fill-primary/[0.01]" />
+                        
+                        {/* North and Solar azimuth compass needle */}
+                        <circle cx="120" cy="95" r="24" className="stroke-outline/25" />
+                        <line x1="120" y1="71" x2="120" y2="119" className="stroke-primary/45" />
+                        <line x1="96" y1="95" x2="144" y2="95" className="stroke-outline/20" />
+                        <polygon points="120,73 116,87 124,87" className="fill-primary/60 stroke-none" />
+                        <text x="120" y="66" textAnchor="middle" className="font-sans text-[6px] fill-primary font-bold">N</text>
+                        
+                        {/* Core drill sample points */}
+                        <circle cx="210" cy="100" r="12" className="stroke-primary/50 stroke-dasharray-[2_2]" />
+                        <circle cx="210" cy="100" r="3" className="fill-primary" />
+                        <text x="210" y="122" textAnchor="middle" className="font-sans text-[5.5px] fill-primary font-bold">CORE-01 // SBC 260 kPa</text>
+                        
+                        <circle cx="260" cy="140" r="10" className="stroke-outline/40 stroke-dasharray-[2_2]" />
+                        <circle cx="260" cy="140" r="2.5" className="fill-outline" />
+                        <text x="260" y="158" textAnchor="middle" className="font-sans text-[5px] fill-secondary font-semibold">CORE-02 // GW -4.8m</text>
+                        
+                        {/* Dimension leaders */}
+                        <line x1="60" y1="205" x2="310" y2="205" className="stroke-primary/40" />
+                        <path d="M 60,205 L 68,202 M 60,205 L 68,208" className="stroke-primary/40" />
+                        <path d="M 310,205 L 302,202 M 310,205 L 302,208" className="stroke-primary/40" />
+                        <text x="185" y="218" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-[0.2em]">PARCEL SPAN: 38,400mm [FRONTAGE]</text>
+                      </svg>
+                    </div>
+
+                    <div className="flex justify-between text-[9px] tracking-wider text-secondary/60 border-t border-outline-variant/20 pt-4 font-semibold uppercase relative z-10">
+                      <span>SITE AUDIT: 360° DIAGNOSTICS</span>
+                      <span>SETBACK COMPLIANCE: 100% VERIFIED</span>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+
+            {/* SERVICE 10: PROJECT ESTIMATION */}
+            <div id="project-estimation" className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+              
+              {/* Left Side: CAD Cost Engineering SVG (7 Columns) */}
+              <div className="lg:col-span-7 order-2 lg:order-1">
+                <FadeIn direction="right" duration={1.0}>
+                  <div className="relative aspect-[16/10] w-full rounded border border-outline-variant/30 bg-surface-container p-6 sm:p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group select-none">
+                    <div className="absolute inset-0 opacity-15 blueprint-grid pointer-events-none" />
+                    <div className="absolute inset-4 border border-outline/10 pointer-events-none" />
+                    
+                    <div className="flex justify-between items-start text-[9px] tracking-widest text-outline uppercase font-bold relative z-10">
+                      <span>COST MATRIX // PE-110</span>
+                      <span className="text-primary">[BOQ ITEMIZATION & VARIANCE BUFFER]</span>
+                    </div>
+
+                    <div className="relative w-full h-full my-auto flex items-center justify-center py-4">
+                      <svg className="w-10/12 h-10/12 text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 240">
+                        {/* Chart baseline & grid */}
+                        <line x1="60" y1="30" x2="60" y2="190" className="stroke-outline/30" />
+                        <line x1="60" y1="190" x2="360" y2="190" className="stroke-outline/30" />
+                        
+                        {/* Package 1: Civil & Structural */}
+                        <rect x="60" y="45" width="260" height="22" className="stroke-primary/45 fill-primary/[0.08]" />
+                        <text x="70" y="59" className="font-sans text-[6px] fill-primary font-bold uppercase tracking-wider">CIVIL & STRUCTURAL (RCC/STEEL) // 42%</text>
+                        <text x="310" y="59" textAnchor="end" className="font-sans text-[6px] fill-primary font-bold">QTY AUDITED</text>
+                        
+                        {/* Package 2: Finishes & Facade */}
+                        <rect x="60" y="78" width="180" height="22" className="stroke-outline/40 fill-outline/[0.04]" />
+                        <text x="70" y="92" className="font-sans text-[6px] fill-secondary font-bold uppercase tracking-wider">ARCHITECTURAL FINISHES & GLAZING // 28%</text>
+                        <text x="230" y="92" textAnchor="end" className="font-sans text-[6px] fill-secondary font-semibold">SPEC GRADE-A</text>
+                        
+                        {/* Package 3: MEP & Automation */}
+                        <rect x="60" y="111" width="120" height="22" className="stroke-outline/40 fill-outline/[0.04]" />
+                        <text x="70" y="125" className="font-sans text-[6px] fill-secondary font-bold uppercase tracking-wider">MEP & LOW-VOLTAGE AUTOMATION // 18%</text>
+                        <text x="170" y="125" textAnchor="end" className="font-sans text-[6px] fill-secondary font-semibold">TIER-1</text>
+                        
+                        {/* Package 4: Contingency Buffer */}
+                        <rect x="60" y="144" width="80" height="22" className="stroke-primary/45 stroke-dasharray-[2_3] fill-primary/[0.02]" />
+                        <text x="70" y="158" className="font-sans text-[6px] fill-primary font-bold uppercase tracking-wider">CONTINGENCY BUFFER // 12%</text>
+                        <text x="132" y="158" textAnchor="end" className="font-sans text-[6px] fill-primary font-bold">ZERO SPREAD</text>
+                        
+                        {/* Variance boundary threshold */}
+                        <line x1="320" y1="35" x2="320" y2="185" className="stroke-primary/40 stroke-dasharray-[3_3]" />
+                        <text x="320" y="28" textAnchor="middle" className="font-sans text-[5.5px] fill-primary font-bold">BUDGET CEILING</text>
+                        
+                        <text x="200" y="215" textAnchor="middle" className="font-sans text-[7px] fill-secondary/60 font-bold uppercase tracking-[0.2em]">ITEMIZED BILL OF QUANTITIES // TOLERANCE &lt; 1.5%</text>
+                      </svg>
+                    </div>
+
+                    <div className="flex justify-between text-[9px] tracking-wider text-secondary/60 border-t border-outline-variant/20 pt-4 font-semibold uppercase relative z-10">
+                      <span>ESTIMATE PROTOCOL: 3-TIER BOQ</span>
+                      <span>RATE INDEX: CURRENT MARKET AUDITED</span>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+
+              {/* Right Side: Editorial brief (5 Columns) */}
+              <div className="lg:col-span-5 space-y-8 order-1 lg:order-2">
+                <FadeIn direction="left" duration={0.8} className="space-y-6">
+                  <div className="h-12 w-12 rounded-full bg-primary/5 flex items-center justify-center">
+                    <Calculator className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="font-sans text-[10px] font-bold uppercase tracking-[0.25em] text-primary block">Service 10 // Cost Engineering</span>
+                  
+                  <h2 className="font-serif text-[32px] sm:text-[42px] leading-tight text-on-surface font-normal">
+                    Project Estimation
+                  </h2>
+                  
+                  <p className="font-sans text-[15px] leading-relaxed text-secondary">
+                    Precision cost engineering replaces ambiguity with mathematical certainty. We produce exhaustive, line-item Bill of Quantities (BOQ) with market-indexed rate analyses across RCC structures, masonry, high-end fenestration, premium finishes, and MEP integrations—guaranteeing predictable capital outlays and preventing mid-stream cost inflation.
+                  </p>
+
+                  <ul className="space-y-2.5 font-sans text-[13px] text-secondary border-t border-outline-variant/20 pt-4 pb-2">
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Line-item Bill of Quantities (BOQ) and market rate analysis</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Tiered material specification and trade package models</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Milestone cashflow phasing and contingency risk buffers</li>
+                  </ul>
+
+                  <div className="pt-2">
+                    <Button variant="secondary" showArrow={true} href="/contact?service=project-estimation">
+                      Request Project Estimation
+                    </Button>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+
+            {/* SERVICE 11: BILL VERIFICATION */}
+            <div id="bill-verification" className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+              
+              {/* Left Side: Editorial brief (5 Columns) */}
+              <div className="lg:col-span-5 space-y-8">
+                <FadeIn direction="right" duration={0.8} className="space-y-6">
+                  <div className="h-12 w-12 rounded-full bg-primary/5 flex items-center justify-center">
+                    <FileCheck2 className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="font-sans text-[10px] font-bold uppercase tracking-[0.25em] text-primary block">Service 11 // Forensic Financial Audit</span>
+                  
+                  <h2 className="font-serif text-[32px] sm:text-[42px] leading-tight text-on-surface font-normal">
+                    Bill Verification
+                  </h2>
+                  
+                  <p className="font-sans text-[15px] leading-relaxed text-secondary">
+                    Contractor over-billing and measurement inflation erode project equity. As independent technical auditors, we conduct meticulous physical measurement audits against contractor Running Account (RA) bills, reconcile on-site work against certified blueprints, audit material consumption logs, and enforce strict contractual deductions.
+                  </p>
+
+                  <ul className="space-y-2.5 font-sans text-[13px] text-secondary border-t border-outline-variant/20 pt-4 pb-2">
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> On-site laser measurement audits against contractor RA bills</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Reconciliation against BBS, drawings & material test records</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary shrink-0" /> Penalization of unapproved deviations & final settlement sign-offs</li>
+                  </ul>
+
+                  <div className="pt-2">
+                    <Button variant="secondary" showArrow={true} href="/contact?service=bill-verification">
+                      Initiate Bill Audit
+                    </Button>
+                  </div>
+                </FadeIn>
+              </div>
+
+              {/* Right Side: CAD Audit Stamp & Bill Reconciliation SVG (7 Columns) */}
+              <div className="lg:col-span-7">
+                <FadeIn direction="left" duration={1.0}>
+                  <div className="relative aspect-[16/10] w-full rounded border border-outline-variant/30 bg-surface-container p-6 sm:p-8 flex flex-col justify-between font-sans shadow-elevated overflow-hidden group select-none">
+                    <div className="absolute inset-0 opacity-15 blueprint-grid pointer-events-none" />
+                    <div className="absolute inset-4 border border-outline/10 pointer-events-none" />
+                    
+                    <div className="flex justify-between items-start text-[9px] tracking-widest text-outline uppercase font-bold relative z-10">
+                      <span>AUDIT PROTOCOL // BV-111</span>
+                      <span className="text-primary">[CONTRACTOR MEASUREMENT & RA RECONCILIATION]</span>
+                    </div>
+
+                    <div className="relative w-full h-full my-auto flex items-center justify-center py-4">
+                      <svg className="w-10/12 h-10/12 text-secondary/35 stroke-current stroke-[0.8] fill-none" viewBox="0 0 400 240">
+                        {/* Comparison ledger table */}
+                        <rect x="50" y="35" width="300" height="150" className="stroke-outline/35" />
+                        <line x1="50" y1="65" x2="350" y2="65" className="stroke-outline/25" />
+                        <line x1="200" y1="35" x2="200" y2="185" className="stroke-outline/25" />
+                        
+                        {/* Table headers */}
+                        <text x="125" y="53" textAnchor="middle" className="font-sans text-[6.5px] fill-secondary font-bold uppercase tracking-wider">CLAIMED INVOICE (RA BILL)</text>
+                        <text x="275" y="53" textAnchor="middle" className="font-sans text-[6.5px] fill-primary font-bold uppercase tracking-wider">VERIFIED ON-SITE ACTUALS</text>
+                        
+                        {/* Row 1: Concrete Volume */}
+                        <text x="60" y="85" className="font-sans text-[6px] fill-secondary/80">RCC M30 SLAB: 180 M³</text>
+                        <text x="210" y="85" className="font-sans text-[6px] fill-primary font-semibold">168.4 M³ [CERTIFIED -6.4% DELTA]</text>
+                        
+                        {/* Row 2: Steel Reinforcement */}
+                        <text x="60" y="115" className="font-sans text-[6px] fill-secondary/80">Fe550D TMT REBAR: 14.8 MT</text>
+                        <text x="210" y="115" className="font-sans text-[6px] fill-primary font-semibold">13.9 MT [BBS LOG MATCHED]</text>
+                        
+                        {/* Row 3: Masonry & Plaster */}
+                        <text x="60" y="145" className="font-sans text-[6px] fill-secondary/80">EXTERNAL PLASTER: 1,450 SQ.M</text>
+                        <text x="210" y="145" className="font-sans text-[6px] fill-primary font-semibold">1,340 SQ.M [LASER METER VERIFIED]</text>
+                        
+                        {/* Row dividers */}
+                        <line x1="50" y1="95" x2="350" y2="95" className="stroke-outline/15 stroke-dasharray-[2_4]" />
+                        <line x1="50" y1="125" x2="350" y2="125" className="stroke-outline/15 stroke-dasharray-[2_4]" />
+                        <line x1="50" y1="155" x2="350" y2="155" className="stroke-outline/15 stroke-dasharray-[2_4]" />
+                        
+                        {/* Verification stamp icon */}
+                        <g transform="translate(290, 130) rotate(-12)">
+                          <rect x="-35" y="-12" width="70" height="24" rx="2" className="stroke-primary stroke-[1.2] fill-primary/10" />
+                          <text x="0" y="4" textAnchor="middle" className="font-sans text-[6.5px] fill-primary font-extrabold uppercase tracking-widest">PASSED QA</text>
+                        </g>
+
+                        <text x="200" y="215" textAnchor="middle" className="font-sans text-[7px] fill-primary font-bold uppercase tracking-[0.2em]">CUMULATIVE VARIANCE RECONCILED // DISPUTE-FREE RELEASE</text>
+                      </svg>
+                    </div>
+
+                    <div className="flex justify-between text-[9px] tracking-wider text-secondary/60 border-t border-outline-variant/20 pt-4 font-semibold uppercase relative z-10">
+                      <span>AUDIT STANDARD: LASER PHYSICAL CHECKS</span>
+                      <span>RETENTION SAFEGUARD: 100% ENFORCED</span>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -813,6 +1082,10 @@ export default function ServicesPage() {
                       <span className="text-primary font-bold">•</span>
                       <span>Turnkey projects deploy rigorous core concrete batch testing and structural integrity certifications.</span>
                     </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      <span>Project assessments and bill verifications operate with 100% fiduciary independence from contractors.</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -841,7 +1114,7 @@ export default function ServicesPage() {
             
             <FadeIn direction="up" delay={0.2} duration={0.8}>
               <p className="font-sans text-[16px] sm:text-[18px] leading-relaxed text-secondary max-w-xl">
-                Partner with Bouldspace to outline your spatial concept, interior curation, or turnkey management.
+                Partner with Bouldspace to outline your spatial concept, project assessment, cost estimation, or turnkey delivery.
               </p>
             </FadeIn>
 

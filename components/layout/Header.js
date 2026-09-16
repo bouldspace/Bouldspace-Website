@@ -55,7 +55,7 @@ export default function Header() {
     {
       name: "Expertise",
       links: [
-        { name: "Services Overview", href: "/services", desc: "Our 8 core spatial & engineering capabilities", category: "Execution" },
+        { name: "Services Overview", href: "/services", desc: "Our 11 core spatial, consulting & engineering capabilities", category: "Execution" },
         { name: "Architecture Planning", href: "/services/architecture", desc: "Visionary design and spatial planning systems", category: "Design" },
         { name: "Interior Curation", href: "/services/interior-design", desc: "Timeless curations and custom-tailored spaces", category: "Design" },
         { name: "Modular Kitchens", href: "/services/modular-kitchen", desc: "Precision casework and luxury culinary spaces", category: "Design" },
